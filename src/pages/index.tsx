@@ -83,10 +83,13 @@ export default function Home() {
         <Top dark={dark} setDark={setDark}></Top>
       )}
       <Perfil dark={dark} setDark={setDark}></Perfil>
-      <div className="animate__animated animate__fadeInUp reveal">
+      <div
+        className="animate__animated animate__fadeInUp reveal max-[768px]:mt-32"
+        id="aboutM"
+      >
         <About dark={dark} setDark={setDark}></About>
       </div>
-      <div className=" animate__animated animate__fadeInUp" id="projects">
+      <div className=" animate__animated animate__fadeInUp " id="projects">
         <Projetcs dark={dark}></Projetcs>
       </div>
       <Contact dark={dark} setDark={setDark}></Contact>

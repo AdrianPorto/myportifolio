@@ -44,12 +44,12 @@ const Menu: React.FC<Props> = ({ dark, setDark, active, setActive }) => {
           }  `}
         >
           <Link
-            href={"/"}
+            href={"#aboutM"}
             onClick={() => {
               setActive(false);
             }}
           >
-            Início
+            Sobre
           </Link>
         </div>
         <div
@@ -58,12 +58,12 @@ const Menu: React.FC<Props> = ({ dark, setDark, active, setActive }) => {
           }`}
         >
           <Link
-            href=""
+            href="#projects"
             onClick={() => {
               setActive(false);
             }}
           >
-            Promocões
+            Projetos
           </Link>
         </div>
         <div
@@ -72,7 +72,7 @@ const Menu: React.FC<Props> = ({ dark, setDark, active, setActive }) => {
           } `}
         >
           <Link
-            href="/#contato"
+            href="#contact"
             onClick={() => {
               setActive(false);
             }}

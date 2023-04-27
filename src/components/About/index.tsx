@@ -50,10 +50,8 @@ const About: React.FC<Props> = ({ dark, setDark }) => {
           <Link href={"https://www.instagram.com/up_agencyofc/"}>
             <Image
               src={Up}
-              className={`w-[14vw] mt-8 hover:scale-150 duration-700 ${
-                dark
-                  ? "invert grayscale"
-                  : "invert-0 grayscale-0  max-[768px]:w-[80vw]  "
+              className={`w-[14vw] mt-8 hover:scale-150 duration-700  max-[768px]:w-[80vw] ${
+                dark ? "invert grayscale" : "invert-0 grayscale-0   "
               }`}
               alt=""
             ></Image>
