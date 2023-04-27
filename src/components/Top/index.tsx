@@ -31,7 +31,7 @@ const Top: React.FC<Props> = ({ dark, setDark }) => {
   }, []);
 
   return (
-    <div className="flex flex-row justify-around -pl-10  pr-10 pt-5 animate__animated  animate__backInDown">
+    <div className="flex flex-row justify-around pl-10 pr-10 pt-5 animate__animated  animate__backInDown">
       <div className="flex flex-col">
         <div className={`text-3xl   font-bold `} id="profissao">
           Adrian

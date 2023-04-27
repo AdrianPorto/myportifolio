@@ -29,25 +29,25 @@ const Modal: React.FC<Props> = ({
       <div className="bottom-10">
         <Link href={href}>
           <div
-            className="absolute left-10 bottom-0 group-hover:bottom-32 group-hover:opacity-100 :duration-1000 opacity-0 font-black text-2xl"
+            className="absolute left-10 bottom-0 group-hover:bottom-32 max-[768px]:group-hover:bottom-[34vw] max-[768px]:text-leftg group-hover:opacity-100 :duration-1000 opacity-0 font-black text-2xl"
             id="title"
           >
             {Title}
           </div>
           <div
-            className={`absolute left-10 bottom-0  group-hover:bottom-24  group-hover:opacity-100 opacity-0 transition-all duration-500 
+            className={`absolute left-10 max-[768px]:text-left bottom-0  group-hover:bottom-26 max-[768px]:group-hover:bottom-[20vw] max-[768px]:group-hover:text-[4.6vw]  group-hover:opacity-100 opacity-0 transition-all duration-500 
             ${dark ? "text-black" : "text-white"}`}
           >
             {Description}
           </div>
 
-          <div className="absolute left-[5vw]  bottom-0 group-hover:bottom-10  group-hover:opacity-100 opacity-0 transition-all duration-500">
+          <div className="absolute left-[5vw]  bottom-0 group-hover:bottom-10 max-[768px]:group-hover:bottom-5 max-[768px]:left-[10vw] max-[768px]:w-[9vw] group-hover:opacity-100 opacity-0 transition-all duration-500">
             <Image src={image1} alt={""} className="w-10" />
           </div>
-          <div className="absolute left-[10vw] bottom-0 group-hover:bottom-10  group-hover:opacity-100 opacity-0 transition-all duration-500">
+          <div className="absolute left-[10vw] bottom-0 group-hover:bottom-10 max-[768px]:group-hover:bottom-5 max-[768px]:left-[30vw] max-[768px]:w-[9vw] group-hover:opacity-100 opacity-0 transition-all duration-500">
             <Image src={image2} alt={""} className="w-10" />
           </div>
-          <div className="absolute left-[15vw] bottom-0 group-hover:bottom-10  group-hover:opacity-100 opacity-0 transition-all duration-500">
+          <div className="absolute left-[15vw] bottom-0 group-hover:bottom-10 max-[768px]:group-hover:bottom-5 max-[768px]:left-[50vw] max-[768px]:w-[9vw] group-hover:opacity-100 opacity-0 transition-all duration-500">
             <Image
               src={image3}
               alt={""}
