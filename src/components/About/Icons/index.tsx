@@ -16,12 +16,14 @@ const Icons: React.FC<Props> = ({ src, href, atribute, dark }) => {
         href={href}
         className={`cursor-pointer border-[1px] rounded-full   hover:scale-125 duration-700 
   ${!dark ? "border-white shadow-sm" : " border-black   shadow-sm"}
-        shadow-gray-400 w-[9vw] h-[9vw] flex flex-1 justify-center items-center`}
+        shadow-gray-400 w-[9vw] h-[9vw] flex flex-1 justify-center items-center  max-[768px]:w-[40vw]  max-[768px]:h-[40vw]  `}
       >
         <Image
           src={src}
           alt=""
-          className={`w-[5.2vw]  ${dark ? "invert-0" : `${atribute}`}`}
+          className={`w-[5.2vw]  max-[768px]:w-[20vw]   ${
+            dark ? "invert-0" : `${atribute}`
+          }`}
         ></Image>
       </a>
     </div>

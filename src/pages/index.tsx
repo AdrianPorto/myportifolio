@@ -8,7 +8,8 @@ import Projetcs from "@/components/Projetcs";
 import Contact from "@/components/Contact";
 import "animate.css";
 const inter = Inter({ subsets: ["latin"] });
-
+import useStorage from "../hooks/useStorage";
+import TopMobile from "@/components/Mobile/Top";
 export default function Home() {
   const reveal = () => {
     var reveals = document.querySelectorAll(".reveal");
@@ -47,7 +48,22 @@ export default function Home() {
   useEffect(function mount() {
     window.addEventListener("scroll", reveal2);
   });
-  const [dark, setDark] = useState(true);
+
+  const [dark, setDark] = useState<boolean>(true);
+
+  const toggleDark = () => {
+    setDark(!dark);
+  };
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <main
@@ -55,12 +71,22 @@ export default function Home() {
         dark ? "bg-white" : "bg-black"
       } duration-500 ${inter.className}`}
     >
-      <Top dark={dark} setDark={setDark}></Top>
+      {isMobile ? (
+        <div
+          className={`animate__fadeInRight animate__animated ${
+            dark ? "bg-white" : "bg-black"
+          } fixed z-50`}
+        >
+          <TopMobile dark={dark} setDark={setDark} />
+        </div>
+      ) : (
+        <Top dark={dark} setDark={setDark}></Top>
+      )}
       <Perfil dark={dark} setDark={setDark}></Perfil>
       <div className="animate__animated animate__fadeInUp reveal">
         <About dark={dark} setDark={setDark}></About>
       </div>
-      <div className=" animate__animated animate__fadeInUp">
+      <div className=" animate__animated animate__fadeInUp" id="projects">
         <Projetcs dark={dark}></Projetcs>
       </div>
       <Contact dark={dark} setDark={setDark}></Contact>

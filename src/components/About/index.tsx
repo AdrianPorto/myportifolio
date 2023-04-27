@@ -7,8 +7,10 @@ import Nextjs from "../../../public/next.svg";
 import NodeJs from "../../../public/nodejs.png";
 import Image from "next/image";
 import Facec from "../../../public/facec.svg";
+import TypeScript from "../../../public/typescript.png";
 import Up from "../../../public/up.png";
 import "animate.css";
+import Link from "next/link";
 // import { Container } from './styles';
 interface Props {
   dark: boolean;
@@ -27,38 +29,40 @@ const About: React.FC<Props> = ({ dark, setDark }) => {
         <div
           className={` ${
             dark ? "text-gray-500" : "text-white"
-          } flex flex-col text-gray-500 text-3xl mt-10 justify-center items-center`}
+          } flex flex-col text-gray-500 text-3xl mt-10 justify-center items-center max-[768px]:ml-[10vw] max-[768px]:mr-[10vw]`}
         >
           Formado em Análise e Desenvolvimento de Sistemas na Instituição
-          <a href="https://umfg.edu.br/">
+          <Link href={"https://umfg.edu.br/"}>
             <Image
               src={Facec}
-              className="w-[12vw] mt-8 hover:scale-150 duration-700 "
+              className="w-[12vw] mt-8 hover:scale-150 duration-700  max-[768px]:w-[60vw] "
               alt=""
             ></Image>
-          </a>
+          </Link>
         </div>
         <div
           className={`${
             dark ? "text-gray-500" : "text-white"
-          } flex flex-col text-gray-500 text-3xl mt-10 justify-center items-center  `}
+          } flex flex-col text-gray-500 text-3xl mt-10 justify-center items-center  max-[768px]:ml-[10vw] max-[768px]:mr-[10vw] `}
         >
           Sou Desenvolvedor Web e Mobile a 2 anos <br></br>Atualmente sou CEO e
           Desenvolvedor da
-          <a href="">
+          <Link href={"https://www.instagram.com/up_agencyofc/"}>
             <Image
               src={Up}
               className={`w-[14vw] mt-8 hover:scale-150 duration-700 ${
-                dark ? "invert grayscale" : "invert-0 grayscale-0 "
+                dark
+                  ? "invert grayscale"
+                  : "invert-0 grayscale-0  max-[768px]:w-[80vw]  "
               }`}
               alt=""
             ></Image>
-          </a>
+          </Link>
         </div>
         <div
           className={` ${
             dark ? "text-gray-500" : "text-white"
-          } flex flex-row  text-3xl mt-10 justify-center items-center `}
+          } flex flex-row  text-3xl mt-10 justify-center items-center max-[768px]:ml-[10vw] max-[768px]:mr-[10vw] `}
         >
           Estou disponível para qualquer projeto Web ou Mobile em que você
           desejar!
@@ -71,37 +75,49 @@ const About: React.FC<Props> = ({ dark, setDark }) => {
         >
           Minhas ferramentas de Desenvolvimento
         </div>
-        <div className="flex flex-1 justify-center space-x-10 mt-10">
-          <Icons
-            src={ReactJs}
-            href={""}
-            atribute={undefined}
-            dark={false}
-          ></Icons>
-          <Icons
-            src={ReactNative}
-            href={""}
-            atribute={undefined}
-            dark={false}
-          ></Icons>
-          <Icons
-            src={Tailwindcss}
-            href={""}
-            atribute={undefined}
-            dark={false}
-          ></Icons>
-          <Icons
-            src={Nextjs}
-            href={""}
-            atribute={`${dark ? "invert-0" : "invert"}`}
-            dark={false}
-          ></Icons>
-          <Icons
-            src={NodeJs}
-            href={""}
-            atribute={undefined}
-            dark={false}
-          ></Icons>
+        <div className="flex flex-1 flex-row  max-[768px]:flex-col  justify-center space-x-10  max-[768px]:space-y-20  max-[768px]:space-x-0  mt-10">
+          <div className=" flex flex-row space-x-10   max-[768px]:flex-row max-[768px]:flex  max-[768px]:space-x-10">
+            <Icons
+              src={ReactJs}
+              href={"https://react.dev/"}
+              atribute={undefined}
+              dark={false}
+            ></Icons>
+            <Icons
+              src={ReactNative}
+              href={"https://reactnative.dev/"}
+              atribute={undefined}
+              dark={false}
+            ></Icons>
+          </div>
+          <div className="flex flex-row  space-x-10  max-[768px]:flex-row  max-[768px]:flex max-[768px]:space-x-10">
+            <Icons
+              src={TypeScript}
+              href={"https://www.typescriptlang.org/"}
+              atribute={undefined}
+              dark={false}
+            ></Icons>
+            <Icons
+              src={Tailwindcss}
+              href={"https://tailwindcss.com/"}
+              atribute={undefined}
+              dark={false}
+            ></Icons>
+          </div>
+          <div className="flex flex-row space-x-10  max-[768px]:flex-rpw  max-[768px]:flex max-[768px]:space-x-10">
+            <Icons
+              src={Nextjs}
+              href={"https://nextjs.org/"}
+              atribute={`${dark ? "invert-0" : "invert"}`}
+              dark={false}
+            ></Icons>
+            <Icons
+              src={NodeJs}
+              href={"https://nodejs.org/pt-br"}
+              atribute={undefined}
+              dark={false}
+            ></Icons>
+          </div>
         </div>
       </div>
     </div>
