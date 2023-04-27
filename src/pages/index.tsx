@@ -74,8 +74,8 @@ export default function Home() {
       {isMobile ? (
         <div
           className={`animate__fadeInRight animate__animated ${
-            dark ? "bg-white" : "bg-black"
-          } fixed z-50`}
+            dark ? "bg-white" : "bg-black  backdrop-blur-3xl bg-opacity-80"
+          } fixed z-50   `}
         >
           <TopMobile dark={dark} setDark={setDark} />
         </div>

@@ -36,7 +36,7 @@ const TopMobile: React.FC<Props> = ({ dark, setDark }) => {
 
   return (
     <div
-      className="pl-10 pr-10  pb-5  w-screen flex flex-row  border-b-[1px] border-gray-300 shadow-sm    
+      className="pl-10 pr-10   pb-5  w-screen flex flex-row  border-b-[1px] border-gray-700  
       "
     >
       <div className="flex flex-col pt-5">
