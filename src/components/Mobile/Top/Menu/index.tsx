@@ -35,7 +35,7 @@ const Menu: React.FC<Props> = ({ dark, setDark, active, setActive }) => {
     <div
       className={`w-52 h-screen    ${
         dark ? "bg-white" : "bg-black backdrop-blur-3xl bg-opacity-[98%]"
-      } right-0 fixed  border-l-[1px]  shadow-lg animate__fadeInRight animate__animated `}
+      } right-0 fixed  border-l-[1px] border-gray-700    shadow-lg animate__fadeInRight animate__animated `}
     >
       <div className={`flex flex-1 flex-col   mt-36   ml-4 text-lg `}>
         <div
