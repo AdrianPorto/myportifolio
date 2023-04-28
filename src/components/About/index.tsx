@@ -103,7 +103,7 @@ const About: React.FC<Props> = ({ dark, setDark }) => {
             ></Icons>
           </div>
           <div className="flex flex-row space-x-10  max-[768px]:flex-rpw  max-[768px]:flex max-[768px]:space-x-10">
-            <Icons
+            <Icons 
               src={Nextjs}
               href={"https://nextjs.org/"}
               atribute={`${dark ? "invert-0" : "invert"}`}
