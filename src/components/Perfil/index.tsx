@@ -45,24 +45,24 @@ const Perfil: React.FC<Props> = ({ dark, setDark }) => {
               />
             </span>
           </div>
-          <div className="flex flex-1 justify-center items-center mt-10 max-[768px]:pt-14">
+          <div className="flex flex-1 justify-center items-center space-x-8 mt-10 max-[768px]:pt-14">
             <Link href={"https://github.com/AdrianPorto"}>
               <AiFillGithub
                 size={45}
-                className="mr-7 hover:fill-orange-500 hover:scale-125 duration-500  max-[768px]:w-[16vw]  max-[768px]:h-[16vw]"
+                className=" hover:fill-orange-500 hover:scale-125 duration-500  max-[768px]:w-[16vw]  max-[768px]:h-[16vw]"
               />
             </Link>
 
             <Link href={"https://www.instagram.com/adrianp0rto/"}>
               <AiFillInstagram
                 size={45}
-                className="mr-7 hover:fill-orange-500 hover:scale-125 duration-500 max-[768px]:w-[16vw]  max-[768px]:h-[16vw]"
+                className=" hover:fill-orange-500 hover:scale-125 duration-500 max-[768px]:w-[16vw]  max-[768px]:h-[16vw]"
               />
             </Link>
             <Link href={"https://www.linkedin.com/in/adrianporto/"}>
               <BsLinkedin
                 size={45}
-                className="mr-7 hover:fill-orange-500 hover:scale-125 duration-500 max-[768px]:w-[16vw]  max-[768px]:h-[16vw]"
+                className=" hover:fill-orange-500 hover:scale-125 duration-500 max-[768px]:w-[16vw]  max-[768px]:h-[16vw]"
               />
             </Link>
           </div>
