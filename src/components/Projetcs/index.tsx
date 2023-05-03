@@ -38,7 +38,7 @@ const Projetcs: React.FC<Props> = ({ dark }) => {
             src={Feito}
             href="https://feitocriancaleads.vercel.app/"
             Title={"Feito Criança"}
-            Description={"Langing Page de roupas de crianças"}
+            Description={"Landing Page de roupas de crianças"}
             dark={dark}
             image1={TypeScript}
             image2={Tailwindcss}
