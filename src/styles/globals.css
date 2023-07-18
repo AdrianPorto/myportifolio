@@ -3,19 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
   --color: linear-gradient(45deg, orange, #af4261);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -48,6 +38,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   width: 100%;
+  color: white;
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
