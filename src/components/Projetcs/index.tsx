@@ -8,7 +8,8 @@ import Exodo from "../../../public/exodo.png";
 import TypeScript from "../../../public/typescript.png";
 import Tailwindcss from "../../../public/tailwindcss.png";
 import Nextjs from "../../../public/next.svg";
-
+import ReactJs from "../../../public/reactjs.png";
+import JavaScript from "../../../public/javaScript.png";
 interface Props {
   dark: boolean;
 }
@@ -30,9 +31,10 @@ const Projetcs: React.FC<Props> = ({ dark }) => {
             Title={"Curriculou"}
             Description={"Site para criação de Curriculos "}
             dark={dark}
-            image1={TypeScript}
+            image1={JavaScript}
             image2={Tailwindcss}
-            image3={Nextjs}
+            image3={""}
+            image4={ReactJs}
           ></Modal>
           <Modal
             src={Feito}
@@ -43,6 +45,7 @@ const Projetcs: React.FC<Props> = ({ dark }) => {
             image1={TypeScript}
             image2={Tailwindcss}
             image3={Nextjs}
+            image4={undefined}
           ></Modal>
           <Modal
             src={Exodo}
@@ -53,6 +56,7 @@ const Projetcs: React.FC<Props> = ({ dark }) => {
             image1={TypeScript}
             image2={Tailwindcss}
             image3={Nextjs}
+            image4={undefined}
           ></Modal>
         </div>
       </div>

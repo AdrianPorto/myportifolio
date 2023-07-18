@@ -12,6 +12,7 @@ interface Props {
   image1: any;
   image2: any;
   image3: any;
+  image4: any;
 }
 
 const Modal: React.FC<Props> = ({
@@ -23,6 +24,7 @@ const Modal: React.FC<Props> = ({
   image1,
   image2,
   image3,
+  image4,
 }) => {
   return (
     <div className="  shadow-lg shadow-gray-800 group rounded-lg relative overflow-hidden max-[768px]:w-[80vw] ">
@@ -54,7 +56,9 @@ const Modal: React.FC<Props> = ({
               className={`${dark ? "invert-0" : "invert"} w-14 mb-3`}
             />
           </div>
-
+          <div className="absolute left-[15vw] bottom-0 group-hover:bottom-[5vw] max-[768px]:group-hover:bottom-5 max-[768px]:left-[50vw] max-[768px]:w-[9vw] group-hover:opacity-100 opacity-0 transition-all duration-500">
+            <Image src={image4} alt={""} className={`w-12 -mb-1`} />
+          </div>
           <Image
             src={src}
             alt=""
